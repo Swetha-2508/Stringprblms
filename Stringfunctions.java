@@ -12,7 +12,7 @@ public class Stringfunctions {
         int b=B.length();
         int c=a+b;
         System.out.println(c);
-        if(A.compareto(B))
+        if(A.compareto(B)>0) //compareTo function returns 0 or 1 (lexicographical order - dict order)
         {
             System.out.println("Yes");
         }
@@ -25,7 +25,6 @@ public class Stringfunctions {
         String remain1=A.substring(1,a);
         String remain2=B.substring(1,b);
         System.out.println(first1+remain1+" "+first2+remain2);
-        /* Enter your code here. Print output to STDOUT. */
         
     }
 }
