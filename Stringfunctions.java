@@ -1,7 +1,6 @@
-import java.io.*;
 import java.util.*;
-
-public class Stringfunctions {
+public class stringfunction
+{
 
     public static void main(String[] args) {
         
@@ -12,7 +11,7 @@ public class Stringfunctions {
         int b=B.length();
         int c=a+b;
         System.out.println(c);
-        if(A.compareto(B)>0) //compareTo function returns 0 or 1 (lexicographical order - dict order)
+        if(A.compareTo(B)<0) //compareTo function returns 0 if it is equal (lexicographical order - dict order) negative number - lexicographical order 
         {
             System.out.println("Yes");
         }
@@ -20,8 +19,12 @@ public class Stringfunctions {
         {
             System.out.println("No");
         }
-        String first1=A.substring(0,1).toUppercase();
-        String first2=B.substring(0,1).toLowercase();
+        if(A.compareTo(B)==0)
+        {
+            System.out.println("Equal string");
+        }
+        String first1=A.substring(0,1).toUpperCase();
+        String first2=B.substring(0,1).toLowerCase();
         String remain1=A.substring(1,a);
         String remain2=B.substring(1,b);
         System.out.println(first1+remain1+" "+first2+remain2);
