@@ -15,11 +15,11 @@ class Word
         return longest;
     }
 }
-public class Stringlargestword extends Word {
+public class Stringlongestword {
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        String text=sc.next();
-        System.out.println(findlongest(text));
+        String text=sc.nextLine();
+        System.out.println(Word.findlongest(text));
     }   
 }
