@@ -5,7 +5,7 @@ public class Stringreplace {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the String");
         String str=sc.nextLine();
-        String output=str.replace('a','@');
+        String output=str.replace('a','@').replace('b','$');
         System.out.println(output);
     }
 }
