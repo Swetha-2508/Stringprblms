@@ -7,5 +7,7 @@ public class Stringreplace {
         String str=sc.nextLine();
         String output=str.replace('a','@').replace('b','$');
         System.out.println(output);
+        String wordreplace=str.replace("World","Java");
+        System.out.println(wordreplace);
     }
 }
