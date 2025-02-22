@@ -5,12 +5,19 @@ public class Stringfunction
     public static void main(String[] args) {
         
         Scanner sc=new Scanner(System.in);
-        String A=sc.next();
-        String B=sc.next();
+        String A=sc.nextLine();
+        String B=sc.nextLine();
         int a=A.length();
         int b=B.length();
         int c=a+b;
         System.out.println(c);
+        System.out.println(A.charAt(1));
+        boolean contains=A.contains("Hello");
+        System.out.println(contains);
+        boolean isEqual = A.equals("Hello world");
+        System.out.println(isEqual);
+        int letter=A.indexOf('o');
+        System.out.println(letter);
         if(A.compareTo(B)<0) //compareTo function returns 0 if it is equal negative number - lexicographical order (lexicographical order - dict order) 
         {
             System.out.println("Yes");
