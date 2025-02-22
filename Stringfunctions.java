@@ -11,7 +11,7 @@ public class Stringfunction
         int b=B.length();
         int c=a+b;
         System.out.println(c);
-        if(A.compareTo(B)<0) //compareTo function returns 0 if it is equal (lexicographical order - dict order) negative number - lexicographical order 
+        if(A.compareTo(B)<0) //compareTo function returns 0 if it is equal negative number - lexicographical order (lexicographical order - dict order) 
         {
             System.out.println("Yes");
         }
